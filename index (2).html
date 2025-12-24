@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매력적인 뉴스 웹사이트</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Reset CSS */
+        body, h1, h2, h3, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo a {
+            color: #fff;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+        }
+
+        /* Main Styles */
+        main {
+            padding: 20px 0;
+        }
+
+        .featured-news {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .recent-news {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Article Styles */
+        article {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        article h2, article h3 {
+            margin-bottom: 10px;
+        }
+
+        article a {
+            color: #007bff;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* 모바일 화면 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            header .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">NewsFlash</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">정치</a></li>
+                    <li><a href="#">경제</a></li>
+                    <li><a href="#">사회</a></li>
+                    <li><a href="#">IT/과학</a></li>
+                    <li><a href="#">문화</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="featured-news">
+            <div class="container">
+                <article>
+                    <h2>주요 뉴스 제목</h2>
+                    <p>주요 뉴스 내용 요약...</p>
+                    <a href="#">자세히 보기</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="recent-news">
+            <div class="container">
+                <article>
+                    <h3>최신 뉴스 제목</h3>
+                    <p>최신 뉴스 내용 요약...</p>
+                    <a href="#">자세히 보기</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NewsFlash. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // JavaScript 코드를 여기에 작성합니다.
+            // 예: 메뉴 클릭 이벤트, 스크롤 이벤트 등
+        });
+    </script>
+</body>
+</html>
